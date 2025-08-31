@@ -23,6 +23,7 @@ DEFAULT_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
 ]
 
 THIRD_PARTY_APPS = [
@@ -37,6 +38,9 @@ THIRD_PARTY_APPS = [
     "django_ckeditor_5",
     "modeltranslation",
     "django_filters",
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
 ]
 
 LOCAL_APPS = [
