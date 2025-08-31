@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
-
 from django.conf.urls.static import static
+from django.http import HttpResponse
 
 third_party_urls = [
     path("ckeditor5/", include("django_ckeditor_5.urls")),
@@ -18,6 +18,7 @@ urlpatterns = (
     [
         path("api/", include("apps.Users.urls")),
         path("registertion/", include("apps.registertion.urls")),
+        path("health/", lambda request: HttpResponse("OK")),  # Health check endpoint
     ]
     + third_party_urls  # noqa
     + landing_page_urls  # noqa
