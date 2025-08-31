@@ -16,6 +16,8 @@ volumes
 code
 venv
 
+*.log
+
 
 # Migrations
 **/migrations/**
