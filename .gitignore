@@ -1,0 +1,23 @@
+venv/
+db.sqlite3
+__pycache__/
+media/
+media/*
+!media/.gitkeep
+staticfiles
+desktop.ini
+celerybeat-schedule
+.mypy_cache
+celery_db
+data
+db_volume
+debug.log
+volumes
+code
+venv
+
+
+# Migrations
+**/migrations/**
+!**/migrations/__init__.py
+!**/migrations/

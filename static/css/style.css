@@ -1,0 +1,76 @@
+@import url(//fonts.googleapis.com/css?family=Roboto:500,300,400);
+
+.login-background {
+    max-width: 100%; /* Limit the maximum width */
+    height: auto;    /* Maintain aspect ratio */
+}
+
+.login-form {
+    margin: 0 auto;  /* Center the form */
+    width: 300px;    /* Set a fixed width for the form */
+    padding: 20px;   /* Add some padding for aesthetics */
+    background: white; /* Background color for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+
+body {
+    margin:0;
+    font-family:'Roboto', sans-serif;
+    font-weight:400;
+    color:#333;
+}
+
+#chat {
+    top: 64px;
+    bottom:0;
+    position:fixed;
+    width:100%;
+    overflow-y:scroll;
+    padding-bottom:150px;
+}
+
+#chat .message {
+    background:#efefef;
+    padding:10px 20px;
+    border-radius:4px;
+    width:auto;
+    display:inline;
+    float:left;
+    margin:10px 10px 0;
+    min-width:440px;
+    clear:both;
+}
+
+#chat .message.me {
+    display:inline;
+    float:right;
+    background:#DCEDE0;
+    color:#56A668;
+}
+
+#chat .date {
+    color:#aaa;
+    font-style:italic;
+    font-size:12px;
+}
+
+#chat-input {
+    position:absolute;
+    bottom:0;
+    background:#efefef;
+    width:100%;
+    padding-top:20px;
+}
+
+#chat-input input {
+    width:96%;
+    position:left;
+    float:left;
+    display:inline;
+    margin-left:2%;
+    margin-right:2%;
+    padding-left:0;
+    padding-right:0;
+}
