@@ -5,7 +5,7 @@ import logging
 logger = logging.getLogger("myapp")
 
 EMAIL_HOST = env("EMAIL_HOST")
-EMAIL_PORT = int(env("EMAIL_PORT", 587))
+EMAIL_PORT = int(env("EMAIL_PORT"))
 EMAIL_USE_TLS = env("EMAIL_USE_TLS") == "True"
 EMAIL_USE_SSL = env("EMAIL_USE_SSL") == "True"
 EMAIL_HOST_USER = env("EMAIL_HOST_USER")

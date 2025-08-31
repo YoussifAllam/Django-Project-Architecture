@@ -154,3 +154,6 @@ from config.settings.aws import *  # noqa
 from config.settings.google import *  # google settings # noqa
 from config.settings.SPECTACULAR import *  # noqa
 from config.settings.Cache import *  # noqa
+from config.settings.channels import *  # noqa
+from config.settings.DB_config import *  # noqa
+from config.settings.JWT import *  # noqa
