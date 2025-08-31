@@ -7,7 +7,6 @@ from django.contrib.auth.hashers import make_password
 from rest_framework.parsers import MultiPartParser, FormParser
 from .serializers import UserSerializer
 from rest_framework.request import Request
-from apps.Cart.db_queries import selectors as cart_selectors
 
 User = get_user_model()
 
@@ -16,7 +15,6 @@ User = get_user_model()
 @permission_classes([IsAuthenticated])
 def current_user(request: Request) -> Response:
     user = UserSerializer(request.user, many=False)
-    cart_selectors.get_or_create_cart(request.user)     # Create an empty cart if it does not exist.
     return Response(user.data)
 
 
