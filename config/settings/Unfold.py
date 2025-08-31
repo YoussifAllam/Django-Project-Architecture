@@ -6,7 +6,7 @@ from config.env import ENVIRONMENT
 SITE_URL = "<>"
 DR_LOGO = "DR-mode-logo.png"
 LI_LOGO = "logo_without_bg.png"
-SITE_TITLE = ""
+SITE_TITLE = "ProjectName"
 
 
 def dashboard_callback(request, context):
@@ -103,25 +103,6 @@ UNFOLD = {
                         "icon": "public",
                         "link": SITE_URL,  # Link to actual site
                         "target": "_blank",  # Open in new tab
-                    },
-                ],
-            },
-            {
-                "title": _("Administration"),
-                "separator": True,
-                "collapsible": True,
-                "items": [
-                    {
-                        "title": _("Users"),
-                        "icon": "people",
-                        "link": reverse_lazy("admin:auth_user_changelist"),
-                        "permission": lambda request: request.user.is_superuser,
-                    },
-                    {
-                        "title": _("Groups"),
-                        "icon": "groups",
-                        "link": reverse_lazy("admin:auth_group_changelist"),
-                        "permission": lambda request: request.user.is_superuser,
                     },
                 ],
             },

@@ -139,6 +139,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 AUTH_USER_MODEL = "Users.User"
 
+# Sites framework
+SITE_ID = 1
+
 # SGI
 ASGI_APPLICATION = "config.asgi.application"
 os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
